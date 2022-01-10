@@ -3,5 +3,20 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+body {
 	font-family: "Red Hat Display", sans-serif;
+	min-height: 100vh;
+	background-image: url(images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: hsl(225, 100%, 94%);
+	position: relative;
+}
+
+.container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
