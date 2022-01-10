@@ -13,10 +13,111 @@ body {
 	background-color: hsl(225, 100%, 94%);
 	position: relative;
 }
-
+/* Main Card Container Styling */
 .container {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	max-width: 420px;
+	background-color: white;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+/* Text Container Styling */
+.text-container {
+	padding: 9%;
+	text-align: center;
+}
+.title {
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+.text-container > p {
+	color: hsl(224, 23%, 55%);
+	margin-bottom: 25px;
+	line-height: 1.5em;
+}
+
+/* Pricing Plan Section Styling  */
+.pricing-plan {
+	background-color: hsl(225, 100%, 98%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+	border-radius: 12px;
+	margin-bottom: 30px;
+}
+.pricing-plan .plan {
+	display: flex;
+	align-items: center;
+}
+.plan > div {
+	margin-left: 20px;
+}
+.plan-text h5 {
+	font-size: 16px;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	margin-bottom: 4px;
+}
+.plan-text p {
+	font-size: 16px;
+	font-weight: 500;
+	color: hsl(224, 23%, 55%);
+}
+.pricing-plan a {
+	font-weight: 900;
+	color: hsl(224, 80%, 33%);
+}
+
+.pricing-plan a:hover {
+	text-decoration: none;
+	color: hsl(245, 75%, 52%);
+	transition: color 0.4s ease;
+}
+.text-container .payment-btn {
+	display: block;
+	color: white;
+	text-decoration: none;
+	background-color: hsl(245, 75%, 52%);
+	padding: 15px 0px;
+	border-radius: 12px;
+	box-shadow: 0 10px 30px hsla(245, 75%, 52%, 0.404);
+	margin-bottom: 30px;
+	transition: background-color 0.4s ease;
+}
+
+.text-container .payment-btn:hover {
+	background-color: hsl(224, 23%, 55%);
+}
+.text-container .cancel-btn {
+	text-decoration: none;
+	color: hsl(224, 23%, 55%);
+	font-weight: 900;
+	transition: color 0.4s ease;
+}
+.cancel-btn:hover {
+	color: hsl(223, 47%, 23%);
+}
+
+/* Responsive Design Start  */
+@media screen and (max-width: 425px) {
+	body {
+		background-image: url(images/pattern-background-mobile.svg);
+		font-size: 14px;
+	}
+	.container {
+		max-width: 87%;
+	}
+	.title {
+		font-size: 23px;
+	}
+	.pricing-plan {
+		padding: 12px;
+	}
 }
